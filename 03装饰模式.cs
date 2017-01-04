@@ -40,6 +40,7 @@ class Tshirts: Finery
 	{
 		Console.Write("大T恤");
 		base.show();
+		//base调用的是父类，即Finery类的Show()方法，父类Show()里会检测当前实例component指向，所以会跳到另一个实例里，继续Show()。		
 	}
 }
 
